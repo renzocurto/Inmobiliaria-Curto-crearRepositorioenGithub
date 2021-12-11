@@ -1,0 +1,319 @@
+body {
+
+    background-color: rgb(240, 230, 218);
+
+    
+}
+
+h1 {
+color: red;
+
+letter-spacing: 5px;
+
+text-transform: uppercase;
+
+
+}
+
+h2 {
+    color: grey;
+
+    font-style: bold;
+}
+
+h3, h4 {
+
+    color: brown;
+
+    font-style: oblique;
+
+    font-family: Helvetica
+}
+
+
+
+a {
+
+    color: lightcoral;
+}
+
+img {
+
+    border-radius: 5px;
+
+}
+
+
+p {
+
+    color: orangered;
+}
+
+
+
+ul {
+
+    text-transform: uppercase;
+}
+li {
+
+    border-color: black 2px solid;
+
+    display: inline;
+
+    
+}
+
+
+
+.img {
+
+    border: 1px solid red;
+}
+
+
+
+body {
+
+    display: grid;
+
+    grid-template-areas: "nav nav nav" "logo logo logo" "titulos titulos titulos" "cuerpo cuerpo cuerpo" "texto texto texto" "redes redes redes" "pie pie pie";
+
+    grid-template-columns:repeat(3, 1fr) ;
+
+    grid-template-rows: repeat(1fr, 3fr, 3fr, 5fr, 3fr, 1fr, 1fr)
+
+    
+}
+
+.nav {
+
+    display: grid;
+
+    grid-area: nav;
+
+    justify-items:right;
+
+    align-content: center;
+
+}
+
+.logo {
+
+    display: flex;
+
+    grid-area: logo;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+.titulos {
+
+    display: grid;
+
+    grid-area: titulos;
+
+    justify-items: center;
+
+    align-items: center;
+
+    background-color: white;
+
+}
+.cuerpo {
+
+    display: flex;
+
+    grid-area: cuerpo;
+
+    justify-content: space-around;
+
+    background-color: white;
+
+}
+
+.texto {
+
+    display: flex;
+
+    margin-left: 50px;
+
+    margin-right: 50px;
+
+    grid-area: texto;
+
+    justify-content: center;
+
+}
+.redes {
+
+    display: flex;
+
+    grid-area: redes;
+
+    justify-content:center;
+
+
+}
+
+.pie {
+
+    grid-area: pie;
+
+    display: grid;
+
+    justify-items:right;
+
+    align-content: center;
+}
+
+.fotos {
+
+    display: flex;
+
+    align-content: center ;
+
+}
+
+@media only screen and (min-width:769px){
+
+	nav, footer {
+		font-size: 18px;
+	
+	}
+}
+
+@media only screen and (min-width:600px) and (max-width:768px){
+
+    .img {
+
+        height: 180px;
+
+        width: 180px;
+    }
+
+    .nav, .pie {
+
+        justify-content: center;
+    }
+
+
+}
+
+@media only screen and (min-width:321px) and (max-width:599px){
+
+    .img {
+
+        height: 110px;
+
+        width: 110px;
+    }
+
+    .nav, .pie {
+
+        justify-content: center;
+
+        font-size: 12px;
+
+
+    }
+
+    .titulos{
+
+            font-size: 10px;
+
+            background-color:rgb(240, 230, 218) ;
+
+            letter-spacing: 1px;
+
+
+    }
+
+    p {
+
+        font-size: 11px;
+    }
+    
+    
+    .cuerpo {
+
+        background-color:rgb(240, 230, 218) ;
+
+        justify-items: center;
+
+
+    }
+
+    h1 {
+
+        letter-spacing: 2px;
+    }
+
+    .logo-redes {
+
+        height: 30px;
+
+        width: 30px;
+    }
+}
+
+@media only screen and (max-width:320px){
+
+    .img {
+
+        height: 70px;
+
+        width: 70px;
+    }
+
+    .titulos{
+
+        font-size: 10px;
+
+        background-color:rgb(240, 230, 218) ;
+
+
+    }
+
+    h1 {
+
+        letter-spacing: 1px;
+
+        font-size: 14px;
+    }
+
+
+
+    .cuerpo {
+
+    background-color:rgb(240, 230, 218) ;
+
+    justify-items: center;
+
+
+}
+
+.nav, .pie {
+
+    justify-content: center;
+
+    font-size: 12px;
+
+
+}
+
+p {
+
+    font-size: 10px;
+}
+
+.logo-redes {
+
+    height: 21px;
+
+    width: 21px;
+}
+
+}
