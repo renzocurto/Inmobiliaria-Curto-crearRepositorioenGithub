@@ -1,6 +1,6 @@
 body {
 
-    background-color: rgb(240, 230, 218);
+    background-image: linear-gradient(to top, rgb(240, 230, 218), rgb(231, 231, 231));
 
     
 }
@@ -35,6 +35,8 @@ h3, h4 {
 a {
 
     color: lightcoral;
+
+
 }
 
 img {
@@ -107,7 +109,10 @@ body {
     justify-content: center;
 
     align-items: center;
+
+    
 }
+
 
 .titulos {
 
@@ -155,8 +160,11 @@ body {
 
     justify-content:center;
 
+    transform: rotate(15deg);
 
 }
+
+
 
 .pie {
 
